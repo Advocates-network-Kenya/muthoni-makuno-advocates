@@ -20,6 +20,12 @@
                     <flux:sidebar.item icon="book-open-text" :href="route('admin.laws.index')" :current="request()->routeIs('admin.laws.index')" wire:navigate>
                         {{ __('Laws') }}
                     </flux:sidebar.item>
+                    <flux:sidebar.item icon="book-open-text" :href="route('admin.laws.index')" :current="request()->routeIs('admin.laws.index')" wire:navigate>
+                        {{ __('Laws') }}
+                    </flux:sidebar.item>
+                    <flux:sidebar.item icon="users" :href="route('admin.advocates.index')" :current="request()->routeIs('admin.advocates.index')" wire:navigate>
+                        {{ __('Advocates') }}
+                    </flux:sidebar.item>
                 </flux:sidebar.group>
             </flux:sidebar.nav>
 

@@ -51,4 +51,10 @@ class User extends Authenticatable
     {
         return $this->hasMany(Areaoflaw::class);
     }
+
+    // relationship with advocates
+    public function advocates(): \Illuminate\Database\Eloquent\Relations\HasMany
+    {
+        return $this->hasMany(Advocate::class);
+    }
 }
