@@ -2,11 +2,11 @@
 
 use App\Http\Middleware\EnsureTeamMembership;
 use Illuminate\Support\Facades\Route;
-use Laravel\Fortify\Features;
+//use Laravel\Fortify\Features;
 
-Route::view('/', 'welcome', [
+/* Route::view('/', 'welcome', [
     'canRegister' => Features::enabled(Features::registration()),
-])->name('home');
+])->name('home'); */
 
 Route::prefix('{current_team}')
     ->middleware(['auth', 'verified', EnsureTeamMembership::class])
@@ -20,4 +20,5 @@ Route::middleware(['auth'])->group(function () {
 });
 
 require __DIR__.'/settings.php';
+require __DIR__.'/frontend.php';
 require __DIR__.'/admin.php';

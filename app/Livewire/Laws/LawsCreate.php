@@ -25,7 +25,7 @@ class LawsCreate extends Component
             'title' => 'required|string|max:255',
             'description' => 'required|string',
             'content' => 'required|string',
-            'image' => 'required|image|mimes:jpeg,png,jpg|max:2048',
+            'image' => 'required|image|mimes:jpeg,png,jpg,webp|max:2048',
         ]);
 
         $imagePath = null;
