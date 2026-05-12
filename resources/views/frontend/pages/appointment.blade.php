@@ -61,11 +61,17 @@
                                 <div class="col-md-6 form-group mb-3">
                                     <select class="form-control">
                                         <option selected disabled>Select Practice Area</option>
-                                        <option>Corporate Law</option>
-                                        <option>Family Law</option>
-                                        <option>Commercial Litigation</option>
-                                        <option>Real Estate & Conveyancing</option>
-                                        <option>Employment Law</option>
+                                        <option value="corporate-law">Corporate Law</option>
+                                        <option value="family-law">Family Law</option>
+                                        <option value="commercial-litigation">Commercial Litigation</option>
+                                        <option value="real-estate-conveyancing">Real Estate & Conveyancing</option>
+                                        <option value="employment-law">Employment Law</option>
+                                        <option value="intellectual-property">Intellectual Property</option>
+                                        <option value="criminal-defense">Criminal Defense</option>
+                                        <option value="civil-rights">Civil Rights</option>
+                                        <option value="immigration-law">Immigration Law</option>
+                                        <option value="tax-law">Tax Law</option>    
+                                        <option value="other">Other</option>
                                     </select>
                                 </div>
                                 <div class="col-md-6 form-group mb-3">

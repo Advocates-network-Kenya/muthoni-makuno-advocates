@@ -370,7 +370,7 @@
                                         P. O BOX 7449-01000
                                         THIKA.</p>
                                     <p><i class="fa fa-phone-alt"></i>+254 7-224-722-28</p>
-                                    <p><i class="fa fa-envelope"></i>mmk.advocates@gmail.com</p>
+                                    <p><i class="fa fa-envelope"></i>mmklaw.advocates@gmail.com</p>
                                     <div class="footer-social">
                                         <a href=""><i class="fab fa-twitter"></i></a>
                                         <a href=""><i class="fab fa-facebook-f"></i></a>

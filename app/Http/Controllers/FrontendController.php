@@ -34,7 +34,7 @@ class FrontendController extends Controller
     public function practiceareas()
     {
         //
-        $practiceareas = Areaoflaw::oldest()->paginate(6);
+        $practiceareas = Areaoflaw::oldest()->paginate(20);
         $title = 'Practice Areas';
         return view('frontend.pages.practice', [
             'title' => $title,
@@ -48,7 +48,7 @@ class FrontendController extends Controller
         //
         $title = 'Our Team';
         //team where role = partner
-        $partners = Advocate::where('role', 'partner')->paginate(6);
+        $partners = Advocate::oldest()->paginate(6); //get all advocates order by oldest and paginate
         //team where role = associate
         $associates = Advocate::where('role', 'associate')->paginate(6);
         //team where role = lawyer
@@ -87,9 +87,24 @@ class FrontendController extends Controller
     }
 
 
+//Practice Area Details
+    public function practiceareadetails($slug)
+    {
+        //
+        $practicearea = Areaoflaw::where('slug', $slug)->firstOrFail();
+        $otherareas = Areaoflaw::oldest()->get();
+        $title = $practicearea->title;
+        return view('frontend.pages.practice-details', ['title' => $title, 'practicearea' => $practicearea, 'otherareas' => $otherareas]);
+    }
 
-
-
+//  team detail
+    public function teamdetails($slug)
+    {
+        //
+        $team = Advocate::where('slug', $slug)->firstOrFail();
+        $title = $team->name;
+        return view('frontend.pages.team-details', ['title' => $title, 'team' => $team]);
+    }
 
     /* end Pages */
 

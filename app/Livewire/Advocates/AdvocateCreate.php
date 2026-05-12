@@ -30,7 +30,7 @@ class AdvocateCreate extends Component
             'role' => 'required|string',
             'qualifications' => 'required|string',
             'content' => 'required|string',
-            'image' => 'required|image|mimes:jpeg,png,jpg|max:2048',
+            'image' => 'required|image|mimes:jpeg,png,jpg|max:5120',//5mb
         ]);
 
         $imagePath = $this->image->store('advocates', 'public');

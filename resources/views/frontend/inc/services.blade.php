@@ -21,7 +21,7 @@
                          <p>
                             {{$area->description}}
                          </p>
-                         <a class="cta-button-light" href="">Learn More</a>
+                         <a class="cta-button-light" href="{{ route('practicearea.details', ['slug' => $area->slug]) }}">Learn More</a>
                      </div>
                  </div>
              </div>
