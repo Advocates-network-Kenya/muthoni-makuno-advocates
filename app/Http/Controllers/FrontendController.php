@@ -16,9 +16,13 @@ class FrontendController extends Controller
     public function index()
     {
         //
+        $partners = Advocate::query()
+            ->oldest()
+            ->take(4)
+            ->get();
         $practiceareas =Areaoflaw::oldest()->paginate(6);
         $title = 'Welcome to mmkAdvocates LLp';
-        return view('frontend.pages.index', ['title' => $title, 'practiceareas' => $practiceareas]);
+        return view('frontend.pages.index', ['title' => $title, 'practiceareas' => $practiceareas, 'partners' => $partners]);
     }
 
     /* Pages  */

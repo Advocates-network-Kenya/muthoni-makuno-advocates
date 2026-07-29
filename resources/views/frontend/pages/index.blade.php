@@ -5,60 +5,132 @@
     @include('frontend.inc.aboutsection')
     @include('frontend.inc.services')
     {{-- apointment --}}
-    <div class="appointment">
-        <div class="container">
-            <div class="section-header text-center mb-5">
-                <h2>Book an Appointment</h2>
-                <p>Schedule a professional consultation with our legal experts at your convenience.</p>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="appointment-form shadow-sm">
-                        <form>
-                            <div class="row">
-                                <div class="col-md-6 form-group mb-3">
-                                    <input type="text" class="form-control" placeholder="Full Name" required>
-                                </div>
-                                <div class="col-md-6 form-group mb-3">
-                                    <input type="email" class="form-control" placeholder="Email Address" required>
-                                </div>
-                                <div class="col-md-6 form-group mb-3">
-                                    <input type="tel" class="form-control" placeholder="Phone Number" required>
-                                </div>
-                                <div class="col-md-6 form-group mb-3">
-                                    <select class="form-control">
-                                        <option selected disabled>Select Practice Area</option>
-                                        <option>Corporate Law</option>
-                                        <option>Family Law</option>
-                                        <option>Commercial Litigation</option>
-                                        <option>Real Estate & Conveyancing</option>
-                                        <option>Employment Law</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-6 form-group mb-3">
-                                    <input type="date" class="form-control" title="Preferred Date" required>
-                                </div>
-                                <div class="col-md-6 form-group mb-3">
-                                    <input type="time" class="form-control" title="Preferred Time" required>
-                                </div>
-                                <div class="col-12 form-group mb-4">
-                                    <textarea class="form-control" rows="4" placeholder="Brief description of your legal requirements" required></textarea>
-                                </div>
-                                <div class="col-12 text-center">
-                                    <button class="cta-button border-0" type="submit">Submit Appointment Request</button>
-                                </div>
+   <div class="appointment">
+    <div class="container">
+
+        <div class="section-header text-center mb-5">
+            <h2>Book an Appointment</h2>
+            <p>Schedule a professional consultation with our legal experts at your convenience.</p>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+
+                <div class="appointment-form">
+
+                    <form action="" method="POST">
+                        @csrf
+
+                        <div class="row">
+
+                            <div class="col-md-6 mb-3">
+                                <input type="text"
+                                       name="name"
+                                       class="form-control"
+                                       placeholder="Full Name"
+                                       required>
                             </div>
-                        </form>
-                    </div>
+
+                            <div class="col-md-6 mb-3">
+                                <input type="email"
+                                       name="email"
+                                       class="form-control"
+                                       placeholder="Email Address"
+                                       required>
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <input type="tel"
+                                       name="phone"
+                                       class="form-control"
+                                       placeholder="Phone Number"
+                                       required>
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <select name="practice_area"
+                                        class="form-control"
+                                        required>
+
+                                    <option value="">Select Practice Area</option>
+                                    <option>Corporate Law</option>
+                                    <option>Family Law</option>
+                                    <option>Commercial Litigation</option>
+                                    <option>Real Estate & Conveyancing</option>
+                                    <option>Employment Law</option>
+                                    <option>Intellectual Property</option>
+                                    <option>Criminal Defense</option>
+                                    <option>Civil Rights</option>
+                                    <option>Immigration Law</option>
+                                    <option>Tax Law</option>
+                                    <option>Other</option>
+
+                                </select>
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <select name="day"
+                                        class="form-control"
+                                        required>
+                                    <option value="">Preferred Day</option>
+                                    @for($i = 1; $i <= 31; $i++)
+                                        <option value="{{ $i }}">{{ $i }}</option>
+                                    @endfor
+                                </select>
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <select name="month"
+                                        class="form-control"
+                                        required>
+                                    <option value="">Preferred Month</option>
+                                    <option value="January">January</option>
+                                    <option value="February">February</option>
+                                    <option value="March">March</option>
+                                    <option value="April">April</option>
+                                    <option value="May">May</option>
+                                    <option value="June">June</option>
+                                    <option value="July">July</option>
+                                    <option value="August">August</option>
+                                    <option value="September">September</option>
+                                    <option value="October">October</option>
+                                    <option value="November">November</option>
+                                    <option value="December">December</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-6 mb-4">
+                                <input type="time"
+                                       name="appointment_time"
+                                       class="form-control"
+                                       required>
+                            </div>
+
+                            <div class="col-12 mb-4">
+                                <textarea name="message"
+                                          class="form-control"
+                                          placeholder="Brief description of your legal matter..."
+                                          required></textarea>
+                            </div>
+
+                            <div class="col-12">
+                                <button type="submit" class="btn">
+                                    <i class="fas fa-calendar-check me-2"></i>
+                                    Submit Appointment Request
+                                </button>
+                            </div>
+
+                        </div>
+                    </form>
+
                 </div>
+
             </div>
         </div>
+
     </div>
+</div>
     {{-- end apointment--}}
     @include('frontend.inc.topfeature')
-    <div class="row">
-        <div class="col-12 text-center mt-4">
-            <a class="cta-button" href="{{ route('ourteam') }}">Meet Our Team</a>
-        </div>
-    </div>
+    @include('frontend.inc.partners')
 @endsection

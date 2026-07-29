@@ -1769,30 +1769,63 @@ a:focus {
 }
 
 .footer .footer-contact p i {
+    display: inline-block;
     width: 25px;
+    margin-right: 10px;
+    text-align: center;
 }
 
 .footer .footer-social {
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
     margin-top: 20px;
+    padding-left: 35px;
 }
 
 .footer .footer-social a {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    margin: 0;
+    padding: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .12);
+    color: #ffffff;
+    transition: .3s;
+    text-decoration: none;
+    flex-shrink: 0;
 }
 
 .footer .footer-social a i {
-    margin-right: 15px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 1em;
+    height: 1em;
     font-size: 18px;
-    color: #aa9166;
+    line-height: 1;
+    color: inherit;
 }
 
-.footer .footer-social a:last-child i {
-    margin: 0;
+.footer .footer-social a i::before {
+    line-height: 1;
+}
+
+.footer .footer-social a:hover {
+    background: #ffffff;
+    color: #880422;
+    transform: translateY(-3px);
 }
 
 .footer .footer-social a:hover i {
-    color: #999999;
+    color: inherit;
 }
 
 .footer .footer-menu .f-menu {

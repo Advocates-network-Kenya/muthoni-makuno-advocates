@@ -69,6 +69,67 @@
             background: #880422 !important;
         }
 
+        .footer .footer-contact p i {
+            display: inline-block;
+            color: #ffbd59;
+            margin-right: 10px;
+            width: 25px;
+            text-align: center;
+        }
+
+        .footer .footer-social {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 8px;
+            margin-top: 20px;
+            padding-left: 35px;
+        }
+
+        .footer .footer-social a {
+            display: inline-flex !important;
+            align-items: center;
+            justify-content: center;
+            width: 42px;
+            height: 42px;
+            margin: 0 !important;
+            padding: 0 !important;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, .12);
+            color: #fff;
+            transition: .3s;
+            text-decoration: none;
+            flex-shrink: 0;
+        }
+
+        .footer .footer-social a i {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 1em !important;
+            height: 1em !important;
+            font-size: 18px;
+            line-height: 1;
+            color: inherit !important;
+        }
+
+        .footer .footer-social a i::before {
+            line-height: 1;
+        }
+
+        .footer .footer-social a:hover {
+            padding-left: 0 !important;
+            background: #fff;
+            color: #880422;
+            transform: translateY(-3px);
+        }
+
+        .footer .footer-social a:hover i {
+            color: inherit !important;
+        }
+
         .logo img {
             max-height: 60px;
             width: auto;
@@ -225,6 +286,159 @@
             font-weight: 700;
         }
 
+        .partners-section .partner-card {
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .partners-section .partner-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15) !important;
+        }
+
+        .partners-section .partner-card img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            object-position: top;
+            transition: transform 0.5s ease;
+        }
+
+        .partners-section .partner-card:hover img {
+            transform: scale(1.05);
+        }
+
+        .partners-section .partner-card .card-body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .partners-section .partner-card .card-text {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #555;
+            text-align: center;
+            margin-bottom: 1.25rem;
+        }
+
+        .partners-section .partner-badge {
+            background-color: #880422;
+        }
+
+        .partners-section .partner-card .cta-button {
+            margin-top: auto;
+            padding: 8px 20px;
+            font-size: 0.9rem;
+        }
+
+        /* apointment Overwrite */
+        
+    .appointment {
+        padding: 100px 0;
+        background: linear-gradient(135deg, #f8f9fc 0%, #eef2ff 40%, #f3f6ff 100%);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .appointment::before,
+    .appointment::after {
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+        z-index: 0;
+    }
+
+    .appointment::before {
+        width: 320px;
+        height: 320px;
+        background: rgba(136, 4, 17, 0.08);
+        top: -140px;
+        left: -120px;
+    }
+
+    .appointment::after {
+        width: 260px;
+        height: 260px;
+        background: rgba(136, 4, 17, 0.05);
+        bottom: -100px;
+        right: -80px;
+    }
+
+    .appointment .container {
+        position: relative;
+        z-index: 2;
+    }
+
+    .section-header h2 {
+        font-weight: 700;
+        color: #222;
+    }
+
+    .section-header p {
+        color: #666;
+        max-width: 650px;
+        margin: 0 auto;
+    }
+
+    .appointment-form {
+        background: #fff;
+        padding: 45px;
+        border-radius: 18px;
+        border: 1px solid rgba(0,0,0,.05);
+        box-shadow: 0 20px 50px rgba(0,0,0,.08);
+    }
+
+    .appointment-form .form-control {
+        height: 52px;
+        border-radius: 8px;
+        border: 1px solid #d8dee9;
+        padding: 12px 15px;
+        font-size: 15px;
+        transition: all .3s ease;
+    }
+
+    .appointment-form textarea.form-control {
+        height: 150px;
+        resize: vertical;
+    }
+
+    .appointment-form .form-control:focus {
+        border-color: #880411;
+        box-shadow: 0 0 0 .2rem rgba(136,4,17,.15);
+    }
+
+    .appointment-form .btn {
+        width: 100%;
+        padding: 14px;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: .5px;
+        color: #fff;
+        background: linear-gradient(135deg, #880411, #b80b1f);
+        transition: .3s ease;
+    }
+
+    .appointment-form .btn:hover {
+        background: linear-gradient(135deg, #6d030d, #980919);
+        transform: translateY(-2px);
+        box-shadow: 0 12px 25px rgba(136,4,17,.25);
+    }
+
+    @media (max-width:768px){
+        .appointment{
+            padding:70px 0;
+        }
+
+        .appointment-form{
+            padding:30px;
+        }
+    }
+
+
         /* end apointment form styles*/
     </style>
     {{-- end css overwrite --}}
@@ -323,6 +537,99 @@
 
 
         <!-- Footer Start -->
+        <style>
+            /* Main Footer */
+.footer {
+    background: linear-gradient(135deg, #880422 0%, #a31436 45%, #ffbd59 100%);
+    color: rgba(255, 255, 255, 0.9);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Decorative Background */
+.footer::before {
+    content: "";
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    background: rgba(255,255,255,.06);
+    border-radius: 50%;
+    top: -180px;
+    right: -120px;
+}
+
+.footer::after {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    background: rgba(255,255,255,.04);
+    border-radius: 50%;
+    bottom: -120px;
+    left: -80px;
+}
+
+.footer .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Headings */
+.footer h2 {
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* Paragraphs */
+.footer p {
+    color: rgba(255,255,255,.9);
+    line-height: 1.8;
+}
+
+/* Links */
+.footer a {
+    color: rgba(255,255,255,.9);
+    transition: .3s;
+}
+
+.footer a:hover {
+    color: #ffbd59;
+    text-decoration: none;
+    padding-left: 5px;
+}
+
+/* Footer Menu */
+.footer-menu,
+.footer-menu .f-menu {
+    background: rgba(0,0,0,.15) !important;
+    border-top: 1px solid rgba(255,255,255,.15);
+    border-bottom: 1px solid rgba(255,255,255,.15);
+}
+
+.footer-menu a {
+    color: #fff;
+}
+
+.footer-menu a:hover {
+    color: #ffbd59;
+}
+
+/* Copyright */
+.copyright {
+    background: rgba(0,0,0,.2);
+    border-top: 1px solid rgba(255,255,255,.15);
+}
+
+.copyright p,
+.copyright a {
+    color: #fff;
+}
+
+.copyright a:hover {
+    color: #ffbd59;
+}
+        </style>
         <div class="footer">
             <div class="container">
                 <div class="row">
