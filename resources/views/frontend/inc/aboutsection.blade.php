@@ -125,7 +125,7 @@
         border-radius: 6px;
         font-weight: 600;
         transition: .3s;
-        box-shadow: 0 10px 25px rgba(0,0,0,.15);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, .15);
     }
 
     .cta-button:hover {
@@ -168,11 +168,18 @@
                     <h2>Supporting You Every Step of the Way</h2>
 
                     <p>
-                        <strong>MMK Advocates LLP</strong> is a dynamic Kenyan law firm offering practical, strategic and results-oriented legal solutions to individuals, businesses, government institutions, NGOs and multinational organizations.
+                        <strong>MMK Advocates LLP</strong>is a forward-thinking and dynamic law firm
+                        based in Kenya, offering a comprehensive array of legal services to a
+                        diverse clientele. Our clients include local and international
+                        corporations, government entities, multinational companies, nongovernmental organizations
+                        (NGOs), and high-net-worth individuals.
+                        The firm is headquartered in Thika.
+
                     </p>
 
                     <p>
-                        Headquartered in Thika, we combine legal expertise with a client-focused approach to provide timely, dependable and professional legal representation across a broad range of practice areas.
+                        Headquartered in Thika, we combine legal expertise with a client-focused approach to provide
+                        timely, dependable and professional legal representation across a broad range of practice areas.
                     </p>
 
                     <div class="about-points">
@@ -194,4 +201,3 @@
 
     </div>
 </div>
-
