@@ -352,7 +352,7 @@
 
     .appointment::before {
         width: 320px;
-        height: 320px;
+        height: 320px; 
         background: rgba(136, 4, 17, 0.08);
         top: -140px;
         left: -120px;
@@ -708,7 +708,7 @@
                     </div>
                     <div class="col-md-6">
                         <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        <p>Designed By <a href="https://htmlcodex.com//2">Murimicodes</a></p>
+                        <p>Designed By <a href="">Murimicodes</a></p>
                     </div>
                 </div>
             </div>

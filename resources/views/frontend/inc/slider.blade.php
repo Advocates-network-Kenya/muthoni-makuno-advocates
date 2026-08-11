@@ -21,7 +21,7 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="{{asset('theme/img/carousel-1.jpg')}}" class="d-block w-100" alt="Carousel Image">
+                    <img src="{{asset('img/slider1.png')}}" class="d-block w-100" alt="Carousel Image">
                     <div class="carousel-caption">
                         <h1 class="animated fadeInLeft">Where Justice, Integrity, and Professionalism Meet.</h1>
                         <p class="animated fadeInRight">MMK Advocates LLP is a forward-thinking and dynamic law firm based in Kenya, offering a comprehensive array of legal services to a diverse clientele.</p>
