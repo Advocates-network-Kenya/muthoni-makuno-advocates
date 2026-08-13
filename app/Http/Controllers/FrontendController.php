@@ -20,7 +20,7 @@ class FrontendController extends Controller
             ->oldest()
             ->take(4)
             ->get();
-        $practiceareas =Areaoflaw::oldest()->paginate(6);
+        $practiceareas =Areaoflaw::oldest()->paginate(3);
         $title = 'Welcome to mmkAdvocates LLp';
         return view('frontend.pages.index', ['title' => $title, 'practiceareas' => $practiceareas, 'partners' => $partners]);
     }

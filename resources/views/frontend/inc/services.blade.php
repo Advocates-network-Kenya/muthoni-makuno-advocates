@@ -1,3 +1,4 @@
+-- Active: 1743687398984@@127.0.0.1@3306
  <!-- Service Start -->
  <div class="service">
      <div class="container">
@@ -27,8 +28,10 @@
              </div>
              @endforeach
               {{-- add cta to more practice areas button --}}
+                <div class="col-12 text-center mt-4">
+                    <a href="{{ route('practiceareas') }}" class="cta-button">View All Practice Areas</a>
               
-
+                    
              
              {{-- end loop --}}
              {{-- 
