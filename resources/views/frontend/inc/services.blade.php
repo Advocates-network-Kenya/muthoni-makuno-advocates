@@ -31,7 +31,7 @@
              @else
              <span class="text-primary">Loading .... Coming soon</span>
              @endif
-             {{}}
+             
               {{-- add cta to more practice areas button --}}
                 <div class="col-12 text-center mt-4">
                     <a href="{{ route('practiceareas') }}" class="cta-button">View All Practice Areas</a>
