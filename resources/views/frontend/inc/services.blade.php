@@ -11,6 +11,7 @@
 
              {{-- New Modern UI for Practice Areas --}}
              {{-- loop --}}
+             @if($practiceareas)
              @foreach ($practiceareas as $area)
              <div class="col-lg-4 col-md-6 mb-4">
                  <div class="practice-card">
@@ -27,6 +28,10 @@
                  </div>
              </div>
              @endforeach
+             @else
+             <span class="text-primary">Loading .... Coming soon</span>
+             @endif
+             {{}}
               {{-- add cta to more practice areas button --}}
                 <div class="col-12 text-center mt-4">
                     <a href="{{ route('practiceareas') }}" class="cta-button">View All Practice Areas</a>
