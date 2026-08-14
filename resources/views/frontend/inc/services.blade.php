@@ -1,4 +1,4 @@
--- Active: 1743687398984@@127.0.0.1@3306
+<!-- -- Active: 1743687398984@@127.0.0.1@3306 -->
  <!-- Service Start -->
  <div class="service">
      <div class="container">
@@ -11,6 +11,7 @@
 
              {{-- New Modern UI for Practice Areas --}}
              {{-- loop --}}
+             @if($practiceareas->count()>0)
              @foreach ($practiceareas as $area)
              <div class="col-lg-4 col-md-6 mb-4">
                  <div class="practice-card">
@@ -27,6 +28,12 @@
                  </div>
              </div>
              @endforeach
+             @else
+              <div class="col-12 text-center">
+                    <p class="text-muted mb-0">Loading Our Practice areas ...... <span style="color:green; Font-weight:bold;">coming soon</span>.</p>
+                </div>
+             @endif
+             
               {{-- add cta to more practice areas button --}}
                 <div class="col-12 text-center mt-4">
                     <a href="{{ route('practiceareas') }}" class="cta-button">View All Practice Areas</a>
