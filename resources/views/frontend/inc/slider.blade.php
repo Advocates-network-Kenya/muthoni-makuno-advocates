@@ -30,7 +30,7 @@
                 </div>
 
                 <div class="carousel-item">
-                    <img src="{{asset('theme/img/carousel-2.jpg')}}" class="d-block w-100" alt="Carousel Image">
+                    <img src="{{asset('img/slider1.png')}}" class="d-block w-100" alt="Carousel Image">
                     <div class="carousel-caption">
                         <h1 class="animated fadeInLeft">We prepared to oppose for you</h1>
                         <p class="animated fadeInRight">We are committed to defending your rights with precision, strategy, and dedication</p>
@@ -39,7 +39,7 @@
                 </div>
 
                 <div class="carousel-item">
-                    <img src="{{asset('theme/img/carousel-3.jpg')}}" class="d-block w-100" alt="Carousel Image">
+                    <img src="{{asset('img/slider1.png')}}" class="d-block w-100" alt="Carousel Image">
                     <div class="carousel-caption">
                         <h1 class="animated fadeInLeft">We fight for your privilege</h1>
                         <p class="animated fadeInRight">We are dedicated to safeguarding your rights, interests, and opportunities. With strategic advocacy and unwavering commitment, we ensure your voice is heard and your position is protected.</p>
