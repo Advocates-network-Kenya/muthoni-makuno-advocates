@@ -8,8 +8,12 @@
     <meta content="Law Firm Website Template" name="keywords">
     <meta content="Law Firm Website Template" name="description">
 
+
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="{{ asset('favicon.ico') }}" rel="icon" type="image/x-icon">
+    <link href="{{ asset('favicon.svg') }}" rel="icon" type="image/svg+xml">
+    <link href="{{ asset('apple-touch-icon.png') }}" rel="apple-touch-icon">
+
 
     <!-- Google Font -->
     <link
