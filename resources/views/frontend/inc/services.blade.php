@@ -30,7 +30,7 @@
              @endforeach
              @else
               <div class="col-12 text-center">
-                    <p class="text-muted mb-0">Partner profiles coming soon.</p>
+                    <p class="text-muted mb-0">Loading Our Practice areas ...... <span style="color:green; Font-weight:bold;">coming soon</span>.</p>
                 </div>
              @endif
              
