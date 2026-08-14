@@ -11,7 +11,7 @@
 
              {{-- New Modern UI for Practice Areas --}}
              {{-- loop --}}
-             @if($practiceareas)
+             @if($practiceareas->count()>0)
              @foreach ($practiceareas as $area)
              <div class="col-lg-4 col-md-6 mb-4">
                  <div class="practice-card">
@@ -29,7 +29,9 @@
              </div>
              @endforeach
              @else
-             <span class="text-primary">Loading .... Coming soon</span>
+              <div class="col-12 text-center">
+                    <p class="text-muted mb-0">Partner profiles coming soon.</p>
+                </div>
              @endif
              
               {{-- add cta to more practice areas button --}}
