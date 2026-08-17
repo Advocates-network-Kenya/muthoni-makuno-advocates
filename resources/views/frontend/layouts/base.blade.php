@@ -16,8 +16,12 @@
         content=" MMK Advocates LLP is a dynamic law firm in Thika, Kenya, delivering expert, timely, and client-focused legal services to corporations, NGOs, and individuals. "
         name="description">
 
+
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="{{ asset('favicon.ico') }}" rel="icon" type="image/x-icon">
+    <link href="{{ asset('favicon.svg') }}" rel="icon" type="image/svg+xml">
+    <link href="{{ asset('apple-touch-icon.png') }}" rel="apple-touch-icon">
+
 
     <!-- Google Font -->
     <link
