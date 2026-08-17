@@ -29,7 +29,8 @@
                                        name="name"
                                        class="form-control"
                                        placeholder="Full Name"
-                                       required>
+                                       >
+                                       @error('name')<span class="text-danger">{{ $message }}</span>@enderror
                             </div>
 
                             <div class="col-md-6 mb-3">
@@ -37,7 +38,8 @@
                                        name="email"
                                        class="form-control"
                                        placeholder="Email Address"
-                                       required>
+                                       >
+                                       @error('email')<span class="text-danger">{{ $message }}</span>@enderror
                             </div>
 
                             <div class="col-md-6 mb-3">
@@ -45,13 +47,14 @@
                                        name="phone"
                                        class="form-control"
                                        placeholder="Phone Number"
-                                       required>
+                                       >
+                                       @error('phone')<span class="text-danger">{{ $message }}</span>@enderror
                             </div>
 
                             <div class="col-md-6 mb-3">
                                 <select name="practice_area"
                                         class="form-control"
-                                        required>
+                                        >
 
                                     <option value="">Select Practice Area</option>
                                     <option>Corporate Law</option>
@@ -104,7 +107,8 @@
                                 <input type="time"
                                        name="appointment_time"
                                        class="form-control"
-                                       required>
+                                       placeholder="Preferred Time">
+
                             </div>
 
                             <div class="col-12 mb-4">
@@ -112,6 +116,7 @@
                                           class="form-control"
                                           placeholder="Brief description of your legal matter..."
                                           required></textarea>
+                                          @error('message')<span class="text-danger">{{ $message }}</span>@enderror
                             </div>
 
                             <div class="col-12">

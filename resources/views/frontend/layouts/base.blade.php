@@ -5,8 +5,16 @@
     <meta charset="utf-8">
     <title>{{ $title }}</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Law Firm Website Template" name="keywords">
-    <meta content="Law Firm Website Template" name="description">
+    <!-- Search Engine Indexing -->
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="MMK Advocates LLP">
+    <link rel="canonical" href="https://www.mmklaw.advocates.or.ke/">
+    <meta
+        content="MMK Advocates LLP, Law Firm, Thika, Kenya, Legal Services, Civil Law, Family Law, Business Law, Education Law, Immigration Law,muthoni makuno,thika section 9 ,"
+        name="keywords">
+    <meta
+        content=" MMK Advocates LLP is a dynamic law firm in Thika, Kenya, delivering expert, timely, and client-focused legal services to corporations, NGOs, and individuals. "
+        name="description">
 
 
     <!-- Favicon -->
@@ -57,7 +65,7 @@
             box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
         }
 
-          .top-bar {
+        .top-bar {
             background: #880422 !important;
         }
 
@@ -67,7 +75,7 @@
             color: #ffffff !important;
         }
 
-    
+
 
         .footer {
             background: #880422 !important;
@@ -143,20 +151,24 @@
         .appointment {
             padding: 90px 0;
         }
+
         .appointment-form {
             padding: 45px;
             background: #f3f6ff;
             border-radius: 10px;
         }
+
         .appointment-form .form-control {
             height: 45px;
             padding: 10px 15px;
             font-size: 14px;
             border: 1px solid #ddd;
         }
+
         .appointment-form textarea.form-control {
             height: auto;
         }
+
         .appointment-form .btn {
             width: 100%;
             padding: 12px;
@@ -169,6 +181,7 @@
             border-radius: 5px;
             transition: 0.3s;
         }
+
         .appointment-form .btn:hover {
             background: #6d030d;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -218,12 +231,13 @@
             height: 100%;
             top: 0;
             left: 0;
-            background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.7) 100%);
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.7) 100%);
             z-index: 1;
         }
 
         .carousel-caption {
-            z-index: 2; /* Ensures text stays above the overlay */
+            z-index: 2;
+            /* Ensures text stays above the overlay */
         }
 
         /* New Practice Card UI Styles */
@@ -231,9 +245,11 @@
             background: #ffffff;
             border-radius: 10px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-            overflow: hidden; /* Ensures image corners are rounded */
+            overflow: hidden;
+            /* Ensures image corners are rounded */
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            height: 100%; /* Ensure cards in a row have equal height */
+            height: 100%;
+            /* Ensure cards in a row have equal height */
             display: flex;
             flex-direction: column;
         }
@@ -245,33 +261,39 @@
 
         .practice-card-image {
             width: 100%;
-            height: 200px; /* Fixed height for images */
+            height: 200px;
+            /* Fixed height for images */
             overflow: hidden;
         }
 
         .practice-card-image img {
             width: 100%;
             height: 100%;
-            object-fit: cover; /* Cover the area without distortion */
+            object-fit: cover;
+            /* Cover the area without distortion */
             transition: transform 0.3s ease;
         }
 
         .practice-card:hover .practice-card-image img {
-            transform: scale(1.05); /* Subtle zoom on hover */
+            transform: scale(1.05);
+            /* Subtle zoom on hover */
         }
 
         .practice-card-content {
             padding: 25px;
-            flex-grow: 1; /* Allows content to take up remaining space */
+            flex-grow: 1;
+            /* Allows content to take up remaining space */
             display: flex;
             flex-direction: column;
-            justify-content: space-between; /* Pushes button to bottom */
+            justify-content: space-between;
+            /* Pushes button to bottom */
         }
 
         .practice-card-content h3 {
             font-size: 1.5rem;
             margin-bottom: 15px;
-            color: #880422; /* Brand color for headings */
+            color: #880422;
+            /* Brand color for headings */
         }
 
         .practice-card-content p {
@@ -282,7 +304,8 @@
         }
 
         .practice-card-content .cta-button-light {
-            align-self: flex-start; /* Align button to the left */
+            align-self: flex-start;
+            /* Align button to the left */
             padding: 10px 20px;
             font-size: 0.9rem;
             border-radius: 5px;
@@ -338,109 +361,109 @@
         }
 
         /* apointment Overwrite */
-        
-    .appointment {
-        padding: 100px 0;
-        background: linear-gradient(135deg, #f8f9fc 0%, #eef2ff 40%, #f3f6ff 100%);
-        position: relative;
-        overflow: hidden;
-    }
 
-    .appointment::before,
-    .appointment::after {
-        content: "";
-        position: absolute;
-        border-radius: 50%;
-        z-index: 0;
-    }
-
-    .appointment::before {
-        width: 320px;
-        height: 320px; 
-        background: rgba(136, 4, 17, 0.08);
-        top: -140px;
-        left: -120px;
-    }
-
-    .appointment::after {
-        width: 260px;
-        height: 260px;
-        background: rgba(136, 4, 17, 0.05);
-        bottom: -100px;
-        right: -80px;
-    }
-
-    .appointment .container {
-        position: relative;
-        z-index: 2;
-    }
-
-    .section-header h2 {
-        font-weight: 700;
-        color: #222;
-    }
-
-    .section-header p {
-        color: #666;
-        max-width: 650px;
-        margin: 0 auto;
-    }
-
-    .appointment-form {
-        background: #fff;
-        padding: 45px;
-        border-radius: 18px;
-        border: 1px solid rgba(0,0,0,.05);
-        box-shadow: 0 20px 50px rgba(0,0,0,.08);
-    }
-
-    .appointment-form .form-control {
-        height: 52px;
-        border-radius: 8px;
-        border: 1px solid #d8dee9;
-        padding: 12px 15px;
-        font-size: 15px;
-        transition: all .3s ease;
-    }
-
-    .appointment-form textarea.form-control {
-        height: 150px;
-        resize: vertical;
-    }
-
-    .appointment-form .form-control:focus {
-        border-color: #880411;
-        box-shadow: 0 0 0 .2rem rgba(136,4,17,.15);
-    }
-
-    .appointment-form .btn {
-        width: 100%;
-        padding: 14px;
-        border: none;
-        border-radius: 8px;
-        font-size: 16px;
-        font-weight: 600;
-        letter-spacing: .5px;
-        color: #fff;
-        background: linear-gradient(135deg, #880411, #b80b1f);
-        transition: .3s ease;
-    }
-
-    .appointment-form .btn:hover {
-        background: linear-gradient(135deg, #6d030d, #980919);
-        transform: translateY(-2px);
-        box-shadow: 0 12px 25px rgba(136,4,17,.25);
-    }
-
-    @media (max-width:768px){
-        .appointment{
-            padding:70px 0;
+        .appointment {
+            padding: 100px 0;
+            background: linear-gradient(135deg, #f8f9fc 0%, #eef2ff 40%, #f3f6ff 100%);
+            position: relative;
+            overflow: hidden;
         }
 
-        .appointment-form{
-            padding:30px;
+        .appointment::before,
+        .appointment::after {
+            content: "";
+            position: absolute;
+            border-radius: 50%;
+            z-index: 0;
         }
-    }
+
+        .appointment::before {
+            width: 320px;
+            height: 320px;
+            background: rgba(136, 4, 17, 0.08);
+            top: -140px;
+            left: -120px;
+        }
+
+        .appointment::after {
+            width: 260px;
+            height: 260px;
+            background: rgba(136, 4, 17, 0.05);
+            bottom: -100px;
+            right: -80px;
+        }
+
+        .appointment .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .section-header h2 {
+            font-weight: 700;
+            color: #222;
+        }
+
+        .section-header p {
+            color: #666;
+            max-width: 650px;
+            margin: 0 auto;
+        }
+
+        .appointment-form {
+            background: #fff;
+            padding: 45px;
+            border-radius: 18px;
+            border: 1px solid rgba(0, 0, 0, .05);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, .08);
+        }
+
+        .appointment-form .form-control {
+            height: 52px;
+            border-radius: 8px;
+            border: 1px solid #d8dee9;
+            padding: 12px 15px;
+            font-size: 15px;
+            transition: all .3s ease;
+        }
+
+        .appointment-form textarea.form-control {
+            height: 150px;
+            resize: vertical;
+        }
+
+        .appointment-form .form-control:focus {
+            border-color: #880411;
+            box-shadow: 0 0 0 .2rem rgba(136, 4, 17, .15);
+        }
+
+        .appointment-form .btn {
+            width: 100%;
+            padding: 14px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: .5px;
+            color: #fff;
+            background: linear-gradient(135deg, #880411, #b80b1f);
+            transition: .3s ease;
+        }
+
+        .appointment-form .btn:hover {
+            background: linear-gradient(135deg, #6d030d, #980919);
+            transform: translateY(-2px);
+            box-shadow: 0 12px 25px rgba(136, 4, 17, .25);
+        }
+
+        @media (max-width:768px) {
+            .appointment {
+                padding: 70px 0;
+            }
+
+            .appointment-form {
+                padding: 30px;
+            }
+        }
 
 
         /* end apointment form styles*/
@@ -543,96 +566,96 @@
         <!-- Footer Start -->
         <style>
             /* Main Footer */
-.footer {
-    background: linear-gradient(135deg, #880422 0%, #a31436 45%, #ffbd59 100%);
-    color: rgba(255, 255, 255, 0.9);
-    position: relative;
-    overflow: hidden;
-}
+            .footer {
+                background: linear-gradient(135deg, #880422 0%, #a31436 45%, #ffbd59 100%);
+                color: rgba(255, 255, 255, 0.9);
+                position: relative;
+                overflow: hidden;
+            }
 
-/* Decorative Background */
-.footer::before {
-    content: "";
-    position: absolute;
-    width: 420px;
-    height: 420px;
-    background: rgba(255,255,255,.06);
-    border-radius: 50%;
-    top: -180px;
-    right: -120px;
-}
+            /* Decorative Background */
+            .footer::before {
+                content: "";
+                position: absolute;
+                width: 420px;
+                height: 420px;
+                background: rgba(255, 255, 255, .06);
+                border-radius: 50%;
+                top: -180px;
+                right: -120px;
+            }
 
-.footer::after {
-    content: "";
-    position: absolute;
-    width: 280px;
-    height: 280px;
-    background: rgba(255,255,255,.04);
-    border-radius: 50%;
-    bottom: -120px;
-    left: -80px;
-}
+            .footer::after {
+                content: "";
+                position: absolute;
+                width: 280px;
+                height: 280px;
+                background: rgba(255, 255, 255, .04);
+                border-radius: 50%;
+                bottom: -120px;
+                left: -80px;
+            }
 
-.footer .container {
-    position: relative;
-    z-index: 2;
-}
+            .footer .container {
+                position: relative;
+                z-index: 2;
+            }
 
-/* Headings */
-.footer h2 {
-    color: #fff;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
+            /* Headings */
+            .footer h2 {
+                color: #fff;
+                font-weight: 700;
+                margin-bottom: 20px;
+            }
 
-/* Paragraphs */
-.footer p {
-    color: rgba(255,255,255,.9);
-    line-height: 1.8;
-}
+            /* Paragraphs */
+            .footer p {
+                color: rgba(255, 255, 255, .9);
+                line-height: 1.8;
+            }
 
-/* Links */
-.footer a {
-    color: rgba(255,255,255,.9);
-    transition: .3s;
-}
+            /* Links */
+            .footer a {
+                color: rgba(255, 255, 255, .9);
+                transition: .3s;
+            }
 
-.footer a:hover {
-    color: #ffbd59;
-    text-decoration: none;
-    padding-left: 5px;
-}
+            .footer a:hover {
+                color: #ffbd59;
+                text-decoration: none;
+                padding-left: 5px;
+            }
 
-/* Footer Menu */
-.footer-menu,
-.footer-menu .f-menu {
-    background: rgba(0,0,0,.15) !important;
-    border-top: 1px solid rgba(255,255,255,.15);
-    border-bottom: 1px solid rgba(255,255,255,.15);
-}
+            /* Footer Menu */
+            .footer-menu,
+            .footer-menu .f-menu {
+                background: rgba(0, 0, 0, .15) !important;
+                border-top: 1px solid rgba(255, 255, 255, .15);
+                border-bottom: 1px solid rgba(255, 255, 255, .15);
+            }
 
-.footer-menu a {
-    color: #fff;
-}
+            .footer-menu a {
+                color: #fff;
+            }
 
-.footer-menu a:hover {
-    color: #ffbd59;
-}
+            .footer-menu a:hover {
+                color: #ffbd59;
+            }
 
-/* Copyright */
-.copyright {
-    background: rgba(0,0,0,.2);
-    border-top: 1px solid rgba(255,255,255,.15);
-}
+            /* Copyright */
+            .copyright {
+                background: rgba(0, 0, 0, .2);
+                border-top: 1px solid rgba(255, 255, 255, .15);
+            }
 
-.copyright p,
-.copyright a {
-    color: #fff;
-}
+            .copyright p,
+            .copyright a {
+                color: #fff;
+            }
 
-.copyright a:hover {
-    color: #ffbd59;
-}
+            .copyright a:hover {
+                color: #ffbd59;
+            }
         </style>
         <div class="footer">
             <div class="container">
@@ -669,7 +692,7 @@
                                     <a href="{{ route('practiceareas') }}">Practices</a>
                                     <a href="{{ route('ourteam') }}">Attorneys</a>
                                     <a href="{{ route('appointment') }}">Apointment</a>
-                                    <a href="{{ route('contact')}}">FAQs</a>
+                                    <a href="{{ route('contact') }}">FAQs</a>
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4">
