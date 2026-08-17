@@ -17,10 +17,16 @@
         name="description">
 
 
-    <!-- Favicon -->
-    <link href="{{ asset('favicon.ico') }}" rel="icon" type="image/x-icon">
-    <link href="{{ asset('favicon.svg') }}" rel="icon" type="image/svg+xml">
-    <link href="{{ asset('apple-touch-icon.png') }}" rel="apple-touch-icon">
+    <!-- Favicon are in public folder -->
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" sizes="any">
+
+    <!-- PNG Favicons for Modern Browsers -->
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon-16x16.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon-32x32.png') }}">
+    <meta name="theme-color" content="#880422">
+    <meta name="msapplication-navbutton-color" content="#880422">
+   
+    <link rel="manifest" href="{{ asset('site.webmanifest') }}">
 
 
     <!-- Google Font -->
