@@ -497,7 +497,7 @@
                                 <p>Opening Hour Mon - Fri</p>
                             </div>
                             <div class="text">
-                                <h2>+254 7-224-722-28</h2>
+                                <h2>+254799461975</h2>
                                 <p>Call Us For a Consultation</p>
                             </div>
                             <div class="social">
@@ -708,8 +708,7 @@
                                         YELLOW HOUSE NO. 45
                                         MUGO KIBIRU ROAD.
                                         P. O BOX 7449-01000
-                                        THIKA.</p>
-                                    <p><i class="fa fa-phone-alt"></i>+254 7-224-722-28</p>
+                                        THIKA.</p>                                    <p><i class="fa fa-phone-alt"></i><a href="tel:+254799461975">+254 799 461 975</a></p>
                                     <p><i class="fa fa-envelope"></i>mmklaw.advocates@gmail.com</p>
                                     <div class="footer-social">
                                         <a href=""><i class="fab fa-twitter"></i></a>
