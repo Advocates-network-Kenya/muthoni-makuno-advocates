@@ -32,7 +32,7 @@
                 <div class="carousel-item">
                     <img src="{{asset('img/slider1.png')}}" class="d-block w-100" alt="Carousel Image">
                     <div class="carousel-caption">
-                        <h1 class="animated fadeInLeft">We prepared to oppose for you</h1>
+                        <h1 class="animated fadeInLeft">We prepared to Advocate for you</h1>
                         <p class="animated fadeInRight">We are committed to defending your rights with precision, strategy, and dedication</p>
                         <a class="btn animated fadeInUp" href="{{ route('appointment') }}">Get free consultation</a>
                     </div>
