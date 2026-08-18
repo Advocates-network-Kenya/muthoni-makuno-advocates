@@ -8,9 +8,9 @@
     <!-- Search Engine Indexing -->
     <meta name="robots" content="index, follow">
     <meta name="author" content="MMK Advocates LLP">
-    <link rel="canonical" href="https://www.mmklaw.advocates.or.ke/">
+    <link rel="canonical" href="https://www.mmklaw.advocate.or.ke/">
     <meta
-        content="MMK Advocates LLP, Law Firm, Thika, Kenya, Legal Services, Civil Law, Family Law, Business Law, Education Law, Immigration Law,muthoni makuno,thika section 9 ,"
+        content="MMK Advocates LLP, muthoni advocates ,makuno advocates,muthoni makuno advocates, Legal Services, Civil Law, Family Law, Business Law, Education Law, Immigration Law,muthoni makuno,thika section 9 ,section 9 thika,"
         name="keywords">
     <meta
         content=" MMK Advocates LLP is a dynamic law firm in Thika, Kenya, delivering expert, timely, and client-focused legal services to corporations, NGOs, and individuals. "
