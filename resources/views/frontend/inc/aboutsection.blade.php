@@ -173,7 +173,7 @@
                         diverse clientele. Our clients include local and international
                         corporations, government entities, multinational companies, nongovernmental organizations
                         (NGOs), and high-net-worth individuals.
-                        The firm is headquartered in Thika.
+                        
 
                     </p>
 

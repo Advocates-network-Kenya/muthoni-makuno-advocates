@@ -5,8 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Advocate;
 use App\Models\Areaoflaw;
 
-//use Illuminate\Support\Str;
-
+// use Illuminate\Support\Str;
 
 class FrontendController extends Controller
 {
@@ -20,97 +19,120 @@ class FrontendController extends Controller
             ->oldest()
             ->take(4)
             ->get();
-        $practiceareas =Areaoflaw::oldest()->paginate(3);
+        $practiceareas = Areaoflaw::oldest()->paginate(3);
         $title = 'Welcome to mmkAdvocates LLp';
+
         return view('frontend.pages.index', ['title' => $title, 'practiceareas' => $practiceareas, 'partners' => $partners]);
     }
 
-    /* Pages  */
-    //About Us 
+    /* Pages */
+    // About Us
     public function aboutus()
     {
         //
         $title = 'About Us';
+
         return view('frontend.pages.about', ['title' => $title]);
     }
 
-    //Practice Areas
+    // Practice Areas
     public function practiceareas()
     {
         //
         $practiceareas = Areaoflaw::oldest()->paginate(20);
         $title = 'Practice Areas';
+
         return view('frontend.pages.practice', [
             'title' => $title,
-            'practiceareas' => $practiceareas
+            'practiceareas' => $practiceareas,
         ]);
     }
 
-    //Our Team
+    // Our Team
     public function ourteam()
     {
         //
         $title = 'Our Team';
-        //team where role = partner
-        $partners = Advocate::oldest()->paginate(6); //get all advocates order by oldest and paginate
-        //team where role = associate
+        // team where role = partner
+        $partners = Advocate::oldest()->paginate(6); // get all advocates order by oldest and paginate
+        // team where role = associate
         $associates = Advocate::where('role', 'associate')->paginate(6);
-        //team where role = lawyer
+        // team where role = lawyer
         $lawyers = Advocate::where('role', 'lawyer')->paginate(6);
-        //team where role = other
+        // team where role = other
         $others = Advocate::where('role', 'other')->paginate(6);
-        //team where role =paralegal
+        // team where role =paralegal
         $paralegals = Advocate::where('role', 'paralegal')->paginate(6);
 
-        return view('frontend.pages.team',compact('title', 'partners', 'associates', 'lawyers', 'others', 'paralegals'));
+        return view('frontend.pages.team', compact('title', 'partners', 'associates', 'lawyers', 'others', 'paralegals'));
     }
 
-
-    //Contact Us
+    // Contact Us
     public function contact()
     {
         //
         $title = 'Contact  Us';
+
         return view('frontend.pages.contact', ['title' => $title]);
     }
 
-    //Consultation
+    // Consultation
     public function consultation()
     {
         //
         $title = 'consultation';
+
         return view('frontend.pages.consultation', ['title' => $title]);
     }
 
-    //apointment
+    // apointment
     public function appointment()
     {
         //
         $title = 'Apointment';
+
         return view('frontend.pages.appointment', ['title' => $title]);
     }
 
-
-//Practice Area Details
+    // Practice Area Details
     public function practiceareadetails($slug)
     {
         //
         $practicearea = Areaoflaw::where('slug', $slug)->firstOrFail();
         $otherareas = Areaoflaw::oldest()->get();
         $title = $practicearea->title;
+
         return view('frontend.pages.practice-details', ['title' => $title, 'practicearea' => $practicearea, 'otherareas' => $otherareas]);
     }
 
-//  team detail
+    //  team detail
     public function teamdetails($slug)
     {
         //
         $team = Advocate::where('slug', $slug)->firstOrFail();
         $title = $team->name;
+
         return view('frontend.pages.team-details', ['title' => $title, 'team' => $team]);
+    }
+
+    // blogs
+    public function blogs()
+    {
+        //
+        $title = 'News and Articles';
+
+        return view('frontend.pages.blogs', ['title' => $title]);
+    }
+
+    // case studies
+    public function casestudies()
+    {
+        //
+        $title = 'Case Studies';
+
+        return view('frontend.pages.case_studies', ['title' => $title]);
     }
 
     /* end Pages */
 
-    
 }
