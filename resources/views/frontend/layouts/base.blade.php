@@ -8,19 +8,25 @@
     <!-- Search Engine Indexing -->
     <meta name="robots" content="index, follow">
     <meta name="author" content="MMK Advocates LLP">
-    <link rel="canonical" href="https://www.mmklaw.advocates.or.ke/">
+    <link rel="canonical" href="https://www.mmklaw.advocate.or.ke/">
     <meta
-        content="MMK Advocates LLP, Law Firm, Thika, Kenya, Legal Services, Civil Law, Family Law, Business Law, Education Law, Immigration Law,muthoni makuno,thika section 9 ,"
+        content="MMK Advocates LLP, muthoni advocates ,makuno advocates,muthoni makuno advocates, Legal Services, Civil Law, Family Law, Business Law, Education Law, Immigration Law,muthoni makuno,thika section 9 ,section 9 thika,"
         name="keywords">
     <meta
         content=" MMK Advocates LLP is a dynamic law firm in Thika, Kenya, delivering expert, timely, and client-focused legal services to corporations, NGOs, and individuals. "
         name="description">
 
 
-    <!-- Favicon -->
-    <link href="{{ asset('favicon.ico') }}" rel="icon" type="image/x-icon">
-    <link href="{{ asset('favicon.svg') }}" rel="icon" type="image/svg+xml">
-    <link href="{{ asset('apple-touch-icon.png') }}" rel="apple-touch-icon">
+    <!-- Favicon are in public folder -->
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" sizes="any">
+
+    <!-- PNG Favicons for Modern Browsers -->
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon-16x16.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon-32x32.png') }}">
+    <meta name="theme-color" content="#880422">
+    <meta name="msapplication-navbutton-color" content="#880422">
+   
+    <link rel="manifest" href="{{ asset('site.webmanifest') }}">
 
 
     <!-- Google Font -->
@@ -491,7 +497,7 @@
                                 <p>Opening Hour Mon - Fri</p>
                             </div>
                             <div class="text">
-                                <h2>+254 7-224-722-28</h2>
+                                <h2>+254799461975</h2>
                                 <p>Call Us For a Consultation</p>
                             </div>
                             <div class="social">
@@ -702,8 +708,7 @@
                                         YELLOW HOUSE NO. 45
                                         MUGO KIBIRU ROAD.
                                         P. O BOX 7449-01000
-                                        THIKA.</p>
-                                    <p><i class="fa fa-phone-alt"></i>+254 7-224-722-28</p>
+                                        THIKA.</p>                                    <p><i class="fa fa-phone-alt"></i><a href="tel:+254799461975">+254 799 461 975</a></p>
                                     <p><i class="fa fa-envelope"></i>mmklaw.advocates@gmail.com</p>
                                     <div class="footer-social">
                                         <a href=""><i class="fab fa-twitter"></i></a>
