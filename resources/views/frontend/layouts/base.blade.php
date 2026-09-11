@@ -498,7 +498,7 @@
                                 <a href=""><i class="fab fa-twitter"></i></a>
                                 <a href=""><i class="fab fa-facebook-f"></i></a>
                                 <a href=""><i class="fab fa-linkedin-in"></i></a>
-                                <a href=""><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.instagram.com/mmklaw.advocatesllp/"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
@@ -526,8 +526,8 @@
                             <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Resources</a>
                                 <div class="dropdown-menu">
-                                    <a href="/" class="dropdown-item">News and Articles</a>
-                                    <a href="/" class="dropdown-item">Case Studies</a>
+                                    <a href="{{ route('blogs') }}" class="dropdown-item">News and Articles</a>
+                                    <a href="{{ route('case-studies') }}" class="dropdown-item">Case Studies</a>
                                 </div>
                             </div>
                             <a href="{{ route('contact') }}" class="nav-item nav-link">Contact</a>

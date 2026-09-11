@@ -17,6 +17,11 @@ Route::prefix('mmkadvocates')->group(function () {
     Route::get('appointment', [FrontendController::class, 'appointment'])->name('appointment');
     Route::get('contact', [FrontendController::class, 'contact'])->name('contact');
     Route::get('practice-area/{slug}', [FrontendController::class, 'practiceareadetails'])->name('practicearea.details');
-    //team details
+    // team details
     Route::get('team/{slug}', [FrontendController::class, 'teamdetails'])->name('team.details');
+    // blog
+    Route::get('blogs/', [FrontendController::class, 'blogs'])->name('blogs');
+    // case studies
+    Route::get('case-studies/', [FrontendController::class, 'casestudies'])->name('case-studies');
+
 });
