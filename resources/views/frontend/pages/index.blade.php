@@ -3,6 +3,26 @@
 @section('content')
     @include('frontend.inc.slider')
     @include('frontend.inc.aboutsection')
+    @include('frontend.inc.services')
+    
+    @include('frontend.pages.collab')
+    @include('frontend.inc.map')
+    {{-- apointment --}}
+   <div class="appointment">
+    <div class="container">
+
+        <div class="section-header text-center mb-5">
+            <h2>Book an Appointment</h2>
+            <p>Schedule a professional consultation with our legal experts at your convenience.</p>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+
+                <div class="appointment-form">
+
+                    <form action="" method="POST">
+                        @csrf
 
    
     
