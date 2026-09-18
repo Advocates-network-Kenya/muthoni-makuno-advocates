@@ -486,7 +486,7 @@
         <!-- Our Clients Heading -->
         <div class="clients-heading">
             <h2>
-                Our <span>Clients</span>
+                We Work  <span>With</span>
             </h2>
         </div>
 
@@ -501,7 +501,7 @@
                     Banks
                 </div>
 
-                <ul>
+               {{--  <ul>
                     <li>NCBA Bank</li>
                     <li>ABSA Bank</li>
                     <li>National Bank of Kenya</li>
@@ -512,7 +512,7 @@
                     <li>Meru Sacco</li>
                     <li>Tiba Sacco</li>
                     <li>Agricultural Finance Corporation</li>
-                </ul>
+                </ul> --}}
 
             </div>
 
@@ -524,14 +524,14 @@
                     NGO's and G.O's
                 </div>
 
-                <ul>
+               {{--  <ul>
                     <li>Action for Children in Conflict</li>
                     <li>Girl Child Network</li>
                     <li>Kenya Alliance Against Malaria</li>
                     <li>Alliance for Protection of Children</li>
                     <li>Street Families Rehabilitation Trust Fund</li>
                     <li>Ministry of Labour and Social Protection</li>
-                </ul>
+                </ul>--}}
 
             </div>
 
@@ -543,14 +543,14 @@
                     Insurance Companies
                 </div>
 
-                <ul>
+               {{--  <ul>
                     <li>Monarch Insurance Company</li>
                     <li>Definite Insurance Company</li>
                     <li>Directline Insurance Company</li>
                     <li>CIC Insurance Company</li>
                     <li>Pioneer Insurance Company</li>
                     <li>Madison Insurance Company</li>
-                </ul>
+                </ul>--}}
 
             </div>
 
@@ -562,11 +562,11 @@
                     Companies
                 </div>
 
-                <ul>
+               {{--  <ul>
                     <li>Njuca Consolidated Limited</li>
                     <li>Company</li>
                     <li>Ruaraka Auto Garage</li>
-                </ul>
+                </ul> --}}
 
             </div>
 
