@@ -23,9 +23,11 @@
     <link href="{{ asset('apple-touch-icon.png') }}" rel="apple-touch-icon">
 
 
-    <!-- Google Font -->
+    <!-- Google Fonts: Cormorant Garamond (headings) + Inter (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,600;1,700;1,800&family=Roboto:wght@400;500&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600;700&display=swap"
         rel="stylesheet">
 
     <!-- CSS Libraries -->
@@ -39,13 +41,33 @@
     {{-- css overwrite --}}
     {{-- button --}}
     <style>
+        /* ── Typography ────────────────────────────────────────── */
         html {
             scroll-behavior: smooth;
+            font-size: 16px;
         }
 
         body {
             background-color: #a2cbf5;
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            line-height: 1.7;
+            color: #222;
         }
+
+        h1, h2, h3, h4, h5, h6,
+        .navbar-brand,
+        .section-header h2,
+        .footer h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+        }
+
+        p, a, li, span, td, th, input, textarea, button, select, label {
+            font-family: 'Inter', sans-serif;
+        }
+        /* ── END Typography ─────────────────────────────────────── */
 
         .cta-button {
             display: inline-block;
@@ -656,6 +678,97 @@
             .copyright a:hover {
                 color: #ffbd59;
             }
+
+            /* ── Floating Contact Buttons ──────────────────────── */
+            .floating-contact-buttons {
+                position: fixed;
+                right: 20px;
+                bottom: 80px;
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                z-index: 9999;
+            }
+
+            .floating-btn {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                gap: 10px;
+                padding: 0 16px;
+                height: 52px;
+                border-radius: 30px;
+                color: #fff;
+                font-family: 'Inter', sans-serif;
+                font-size: 14px;
+                font-weight: 600;
+                text-decoration: none;
+                box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+                transition: all 0.3s ease;
+                overflow: hidden;
+                max-width: 52px;
+                white-space: nowrap;
+            }
+
+            .floating-btn i {
+                font-size: 22px;
+                flex-shrink: 0;
+                width: 22px;
+                text-align: center;
+            }
+
+            .floating-btn-label {
+                opacity: 0;
+                max-width: 0;
+                overflow: hidden;
+                transition: opacity 0.3s ease, max-width 0.3s ease;
+            }
+
+            .floating-btn:hover {
+                max-width: 200px;
+                color: #fff;
+                text-decoration: none;
+                transform: translateY(-3px);
+                box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+            }
+
+            .floating-btn:hover .floating-btn-label {
+                opacity: 1;
+                max-width: 150px;
+            }
+
+            .floating-whatsapp {
+                background-color: #25D366;
+            }
+
+            .floating-whatsapp:hover {
+                background-color: #1ebe57;
+            }
+
+            .floating-email {
+                background-color: #880422;
+            }
+
+            .floating-email:hover {
+                background-color: #6d030d;
+            }
+
+            @media (max-width: 576px) {
+                .floating-contact-buttons {
+                    right: 12px;
+                    bottom: 70px;
+                }
+
+                .floating-btn {
+                    height: 46px;
+                    padding: 0 13px;
+                }
+
+                .floating-btn i {
+                    font-size: 20px;
+                }
+            }
+            /* ── END Floating Contact Buttons ──────────────────── */
         </style>
         <div class="footer">
             <div class="container">
@@ -741,6 +854,28 @@
             </div>
         </div>
         <!-- Footer End -->
+
+
+        <!-- Floating Contact Buttons -->
+        <div class="floating-contact-buttons">
+            <!-- WhatsApp -->
+            <a href="https://wa.me/254722472228?text=Hello%20MMK%20Advocates%2C%20I%20would%20like%20to%20inquire%20about%20your%20legal%20services."
+               class="floating-btn floating-whatsapp"
+               target="_blank"
+               rel="noopener noreferrer"
+               title="Chat on WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+                <span class="floating-btn-label">WhatsApp Us</span>
+            </a>
+            <!-- Email -->
+            <a href="mailto:mmklaw.advocates@gmail.com?subject=Legal%20Services%20Inquiry"
+               class="floating-btn floating-email"
+               title="Send us an Email">
+                <i class="fa fa-envelope"></i>
+                <span class="floating-btn-label">Email Us</span>
+            </a>
+        </div>
+        <!-- End Floating Contact Buttons -->
 
         <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
     </div>

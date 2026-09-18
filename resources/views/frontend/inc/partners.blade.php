@@ -1,8 +1,8 @@
 <div class="team partners-section pb-5">
     <div class="container">
         <div class="section-header text-center mb-5">
-            <h2>Our Partners</h2>
-            <p>Meet the partners leading MMK Advocates LLP.</p>
+            <h2>Our Advocates</h2>
+            <p>Meet the advocates leading MMK Advocates LLP.</p>
         </div>
 
         <div class="row">

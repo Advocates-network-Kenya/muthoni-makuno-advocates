@@ -137,6 +137,6 @@
     </div>
 </div>
     {{-- end apointment--}}
-    @include('frontend.inc.topfeature')
+   {{--  @include('frontend.inc.topfeature') --}}
     @include('frontend.inc.partners')
 @endsection
