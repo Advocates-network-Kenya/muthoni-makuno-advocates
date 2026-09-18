@@ -3,8 +3,9 @@
 @section('content')
     @include('frontend.inc.slider')
     @include('frontend.inc.aboutsection')
+    
+    @include('frontend.pages.our-clients')
     @include('frontend.inc.services')
-    @include('frontend.pages.collab')
     {{-- apointment --}}
    <div class="appointment">
     <div class="container">
