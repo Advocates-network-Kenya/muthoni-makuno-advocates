@@ -134,6 +134,12 @@
     .section-header h2 {
         font-weight: 700;
         color: #222;
+        position: static;
+    }
+
+    .section-header h2::before,
+    .section-header h2::after {
+        display: none;
     }
 
     .section-header p {

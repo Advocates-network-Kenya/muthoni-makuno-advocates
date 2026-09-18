@@ -420,9 +420,20 @@
             z-index: 2;
         }
 
+        .section-header {
+            margin-bottom: 2rem;
+        }
+
         .section-header h2 {
             font-weight: 700;
             color: #222;
+            position: static;   /* override theme's relative positioning used for pseudo-lines */
+        }
+
+        /* Remove the three decorative border lines the theme adds via ::before / ::after */
+        .section-header h2::before,
+        .section-header h2::after {
+            display: none;
         }
 
         .section-header p {
